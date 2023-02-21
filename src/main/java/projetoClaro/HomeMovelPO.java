@@ -10,7 +10,7 @@ public class HomeMovelPO extends BasePO {
 		
 	}
 
-	
+
 	public void buttonModal() {
 			driver.findElement(By.xpath("//*[@id=\"cms-Header\"]/div[1]/div/nav/ul[1]/li[1]/button")).click();
 }
@@ -103,6 +103,67 @@ public class HomeMovelPO extends BasePO {
 		driver.findElement(By.xpath("//*[@id=\"cms-Header\"]/div[2]/div/nav/div[1]/ul/li[2]/div[2]/div/div/ul/li[4]/div[2]/ul/li[4]/a")).click();
 		driver.findElement(By.xpath("//*[@id=\"cms-MainContent\"]/div/div/h1")).getText();
 	}
+
+	/*ELEMENTOS MÓVEL MAIS PRA VOCÊ */
+
+	public void buttonTodosPlanos(){
+		driver.findElement(By.xpath("//*[@id=\"cms-Header\"]/div[2]/div/nav/div[1]/ul/li[2]/div[2]/div/div/ul/li[5]/div[2]/ul/li[1]/a")).click();
+		driver.findElement(By.xpath("//*[@id=\"cms-MainContent\"]/section[2]/div/div[1]/h2")).getText();
+	} 
+
+	public void buttonPortabilidade(){
+		driver.findElement(By.xpath("//*[@id=\"cms-Header\"]/div[2]/div/nav/div[1]/ul/li[2]/div[2]/div/div/ul/li[5]/div[2]/ul/li[2]/a")).click();
+		driver.findElement(By.xpath("//*[@id=\"cms-MainContent\"]/div/div/h1")).getText();  
+	}
+
+	public void buttonSmartohones(){
+		driver.findElement(By.xpath("//*[@id=\"cms-Header\"]/div[2]/div/nav/div[1]/ul/li[2]/div[2]/div/div/ul/li[5]/div[2]/ul/li[3]/a")).click();
+		driver.findElement(By.xpath("/html/body/main/div[4]/div/div[2]/div[2]/div/div[2]/div[1]/div[1]/h1")).getText(); 
+	}
+
+	public void buttonUsoNoExterior(){
+		driver.findElement(By.xpath("//*[@id=\"cms-Header\"]/div[2]/div/nav/div[1]/ul/li[2]/div[2]/div/div/ul/li[5]/div[2]/ul/li[4]/a")).click();
+		driver.findElement(By.xpath("//*[@id=\"cms-MainContent\"]/section[2]/div/div[1]/div/div/div[2]/div/div[1]/h2")).getText(); 
+	}
+
+	public void buttonCobertura(){
+		driver.findElement(By.xpath("//*[@id=\"cms-Header\"]/div[2]/div/nav/div[1]/ul/li[2]/div[2]/div/div/ul/li[5]/div[2]/ul/li[5]/a")).click();
+		driver.findElement(By.xpath("//*[@id=\"cms-MainContent\"]/section[1]/div/div[1]/h2")).getText(); 
+	}
+
+	public void buttonClaro5G(){
+		driver.findElement(By.xpath("//*[@id=\"cms-Header\"]/div[2]/div/nav/div[1]/ul/li[2]/div[2]/div/div/ul/li[5]/div[2]/ul/li[6]/a")).click();
+		driver.findElement(By.xpath("//*[@id=\"cms-MainContent\"]/section[2]/div/div[1]/h2")).getText();
+	}
+
+	public void buttonClientesOiMovel(){
+		driver.findElement(By.xpath("//*[@id=\"cms-Header\"]/div[2]/div/nav/div[1]/ul/li[2]/div[2]/div/div/ul/li[5]/div[2]/ul/li[7]/a")).click();
+		driver.findElement(By.xpath("//*[@id=\"cms-MainContent\"]/section[2]/div/div[1]/div/div/div/div/div[1]/h2")).getText();
+	}
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
