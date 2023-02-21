@@ -140,17 +140,62 @@ public void TC_014_DeveEntrarParaAdicionarPacoteExtraPlanoPreMovel()	{
 	Assertions.assertEquals("Pacotes adicionais Claro pré", driver.findElement(By.xpath("//*[@id=\"cms-MainContent\"]/div/div/h1")).getText());
 }
 
+	/* Inicio dos teste dos Plano Mais para você  */
+@Test
+public void TC_015_DeveEntrarEMostrarTodosOsPlanosMovel()	{
+	HomeMovelPO pageHome = new HomeMovelPO(driver);
+	pageHome.buttonMovel();
+	pageHome.buttonTodosPlanos();
+	Assertions.assertEquals("Planos Claro móvel", driver.findElement(By.xpath("//*[@id=\"cms-MainContent\"]/section[2]/div/div[1]/h2")).getText());
+}
 
+@Test
+public void TC_016_DeveEntrarNaPaginaDePortabilidade()	{
+	HomeMovelPO pageHome = new HomeMovelPO(driver);
+	pageHome.buttonMovel();
+	pageHome.buttonPortabilidade();
+	Assertions.assertEquals("Faça portabilidade para a Claro e ganhe bônus exclusivos", driver.findElement(By.xpath("//*[@id=\"cms-MainContent\"]/div/div/h1")).getText());
+}
 
+@Test
+public void TC_017_DeveEntrarNaPaginaDeSmartphones()	{
+	HomeMovelPO pageHome = new HomeMovelPO(driver);
+	pageHome.buttonMovel();
+	pageHome.buttonSmartohones();
+	Assertions.assertEquals("Smartphone", driver.findElement(By.xpath("/html/body/main/div[4]/div/div[2]/div[2]/div/div[2]/div[1]/div[1]/h1")).getText());
+}
 
+@Test
+public void TC_018_DeveEntrarNaPaginaDeUsoParaExterior()	{
+	HomeMovelPO pageHome = new HomeMovelPO(driver);
+	pageHome.buttonMovel();
+	pageHome.buttonUsoNoExterior();
+	Assertions.assertEquals("Passaporte Mundo", driver.findElement(By.xpath("//*[@id=\"cms-MainContent\"]/section[2]/div/div[1]/div/div/div[2]/div/div[1]/h2")).getText());
+}
 
+@Test
+public void TC_019_DeveEntrarNaPaginaDeCoberturaDeSinal()	{
+	HomeMovelPO pageHome = new HomeMovelPO(driver);
+	pageHome.buttonMovel();
+	pageHome.buttonUsoNoExterior();
+	driver.getCurrentUrl().equals("https://www.claro.com.br/mapa-de-cobertura");
+}
 
+@Test
+public void TC_020_DeveEntrarNaPaginaOndeMostraVantagem5G()	{
+	HomeMovelPO pageHome = new HomeMovelPO(driver);
+	pageHome.buttonMovel();
+	pageHome.buttonClaro5G();
+	driver.getCurrentUrl().equals("https://www.claro.com.br/internet/5g-mais");
+}
 
-
-
-
-
-
+@Test
+public void TC_021_DeveEntrarNaPaginaDeMigracaoOIParaClaro()	{
+	HomeMovelPO pageHome = new HomeMovelPO(driver);
+	pageHome.buttonMovel();
+	pageHome.buttonClientesOiMovel();
+	driver.getCurrentUrl().equals("https://www.claro.com.br/clientes-oi-movel");
+}
 
 
 
